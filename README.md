@@ -1,4 +1,3 @@
-```markdown
 # The Hunted House
 
 ## SWE 402 – Game Design and Development
@@ -40,7 +39,7 @@ The player starts inside a haunted house and must reach the exit without being d
 
 - Main menu with Play and Quit buttons
 - AI Ghost using Unity AI Navigation and NavMesh
-- Footsteps Sound for Player
+- Player footstep sounds
 - GhostAI prefab for reuse
 - Ghost movement sound effects
 
@@ -49,9 +48,9 @@ The player starts inside a haunted house and must reach the exit without being d
 | Key | Action |
 |---|---|
 | W or Arrow Up | Move forward |
-| S or Arrow Down| Move backward |
-| A or Arrow Left| Move left |
-| D or Arrow Right| Move right |
+| S or Arrow Down | Move backward |
+| A or Arrow Left | Move left |
+| D or Arrow Right | Move right |
 | Mouse | Select menu buttons |
 
 ## How to Open the Project
@@ -60,17 +59,11 @@ The player starts inside a haunted house and must reach the exit without being d
 2. Open Unity Hub.
 3. Click **Add**.
 4. Select the downloaded project folder.
-5. Open the project using the Unity version used to create it.
+5. Open the project using Unity 6.
 
-```text
-Unity Version: Unity 6
-```
+In the Project window, open the main scene:
 
-6. In the Project window, open the main scene:
-
-```text
 Assets/Scenes/Main.unity
-```
 
 If the scene has a different name, open the scene containing the main menu.
 
@@ -79,7 +72,7 @@ If the scene has a different name, open the scene containing the main menu.
 1. Open the main menu scene.
 2. Press the **Play** button in the Unity Editor.
 3. Click the **Play** button in the game’s main menu.
-4. Use the WASD keys to move the player.
+4. Use the WASD keys or arrow keys to move.
 5. Avoid the ghosts.
 6. Reach the exit to win the game.
 
@@ -96,7 +89,7 @@ Play the game online:
 1. Open the Unity Play link.
 2. Wait for the game to load.
 3. Click the **Play** button.
-4. Use WASD or arrows to move.
+4. Use WASD or arrow keys to move.
 5. Avoid the ghosts.
 6. Reach the exit to complete the game.
 
@@ -127,9 +120,10 @@ The Play button loads the gameplay scene, while the Quit button exits the applic
 The game includes:
 
 - Background ambient audio
+- Player footstep sounds
 - Ghost movement sounds
-- Escape or winning sound
-- Caught or losing sound
+- Winning sound
+- Losing sound
 - 3D audio settings for ghost sounds
 - Audio Listener attached to the Player
 
@@ -137,7 +131,7 @@ The game includes:
 
 ### Winning
 
-The player wins by entering the exit area of the haunted house. A winning screen and exit sound are displayed and played.
+The player wins by entering the exit area of the haunted house. A winning screen and escape sound are displayed and played.
 
 ### Losing
 
@@ -145,21 +139,23 @@ The player loses when detected or caught by a ghost. A caught screen and losing 
 
 ## Repository Contents
 
-```text
-Assets/             Unity scenes, scripts, prefabs, models, UI, and audio
-Packages/           Unity package information
-ProjectSettings/    Unity project settings
-README.md           Project documentation
-```
+Assets/ — Unity scenes, scripts, prefabs, models, UI, and audio
+
+Packages/ — Unity package information
+
+ProjectSettings/ — Unity project settings
+
+README.md — Project documentation
 
 ## Main Scripts
 
-```text
-PlayerMovement.cs   Controls player movement and animation
-GameEnding.cs       Controls winning and losing conditions
-AIPatrol.cs         Controls random AI ghost movement
-DifficultyButton.cs Controls difficulty selection buttons
-```
+PlayerMovement.cs — Controls player movement and animation
+
+GameEnding.cs — Controls winning and losing conditions
+
+AIPatrol.cs — Controls random AI ghost movement
+
+DifficultyButton.cs — Controls difficulty selection buttons
 
 ## Technologies Used
 
@@ -180,4 +176,3 @@ This project was created for:
 **SWE 402 – Game Design and Development**
 
 The project was developed using Unity and the Unity Learn 3D Stealth Game: Haunted House tutorials.
-```
